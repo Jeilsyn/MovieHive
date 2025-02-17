@@ -1,0 +1,322 @@
+@font-face {
+  font-family: bebaN;
+  src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+/* General */
+body {
+  background: linear-gradient(
+    to top,
+    rgba(182, 73, 0, 0.845),
+    rgba(0, 0, 0, 0.938) 50% 150%
+  );
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+}
+
+.form1 {
+   float:left;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+  }
+  .form2 {
+    position:fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+
+
+  
+.btn-cerrar-sesion {
+    flex-direction: row;
+  /* Posiciona el botón respecto al body */
+  top: 20px;
+  /* 20px desde la parte superior */
+  right: 20px;
+  /* 20px desde la parte derecha */
+  padding: 5px 10px;
+  background-color: #b52a00;
+  /* Fondo morado */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cerrar-sesion:hover {
+  background-color: rgba(255, 60, 0, 0.978);
+  /* Color morado claro cuando pasa el mouse */
+}
+
+.btn-cerrar-sesion:focus {
+  background-color: rgba(255, 60, 0, 0.978);
+  color: white; /* Color blanco para el texto */
+  border: 2px solid rgb(255, 191, 0); /* Añadir borde azul */
+  box-shadow: 0 0 5px rgba(255, 199, 32, 0.867), 0 0 12px rgb(255, 42, 0); /* Añadir sombra azul */
+  outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-family: bebaN;
+  color: white;
+  margin: 0;
+}
+
+header nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav a {
+  flex-direction: row;
+  /* Convertir en bloque para que se alineen como botones */
+  margin: 14px 5px;
+  /* Margen entre los botones */
+  padding: 12px 25px;
+  /* Padding uniforme */
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #b52a00;
+  /* Fondo morado para los botones */
+  width: 50%;
+  /* Para que los botones ocupen todo el ancho */
+  max-width: 160px;
+  /* Limitar el tamaño máximo del botón */
+  transition: background-color 0.5s ease;
+  text-align: center;
+  /* Centrado del texto dentro del botón */
+}
+
+header nav a:hover {
+  color: white;
+}
+
+header nav a:focus {
+  background-color: rgba(255, 60, 0, 0.978);
+  color: white; /* Color blanco para el texto */
+  border: 2px solid rgb(255, 191, 0); /* Añadir borde azul */
+  box-shadow: 0 0 5px rgba(255, 199, 32, 0.867), 0 0 12px rgb(255, 42, 0); /* Añadir sombra azul */
+  outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Main Content */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow-x: auto; /* Soporte para tablas anchas */
+}
+/**************************************************************************************************************************/
+
+.divForm {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo semitransparente */
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  /* Ancho del formulario */
+  max-width: 500px;
+  height: auto;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-size: 2rem;
+  color: white;
+  font-family: "bebaN";
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Estilo de los inputs */
+.divForm input[type="text"],
+input[type="number"],
+input[type="date"],
+.divForm input[type="password"]{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-sizing: border-box;
+}
+
+.divForm select:focus{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(48, 48, 48, 0.973);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+  
+}
+
+.divForm select{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+  
+}
+
+
+.divForm input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+.divForm input[type="password"]:focus {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px orangered solid;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 2px 2px 2px 1px orangered;
+}
+
+/* Estilo para el botón de envío */
+.submitC {
+  background-color: #b52a00; /* Fondo morado */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 40%;
+  transition: background-color 0.3s;
+}
+
+.submitC {
+  background-color: rgba(
+    255,
+    60,
+    0,
+    0.978
+  ); /* Cambiar a un color naranja claro */
+}
+
+.submitC:focus {
+  background-color: rgba(255, 60, 0, 0.978);
+  color: white;
+  border: 2px solid rgb(255, 191, 0); /* Borde dorado */
+  box-shadow: 0 0 5px rgba(255, 199, 32, 0.867), 0 0 12px rgb(255, 42, 0); /* Sombra dorada */
+  outline: none;
+}
+
+/**********************************************************************************************************************************************/
+
+/* Table Styles */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+table th,
+table td {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table th {
+  background-color: rgba(255, 60, 0, 0.455);
+  color: white;
+  font-family: fantasy;
+  text-justify: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+table tr:hover {
+  background-color: rgba(255, 60, 0, 0.19);
+}
+table a {
+  color: rgba(19, 27, 255, 0.902);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header nav a {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+
+  table th,
+  table td {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+}

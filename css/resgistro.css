@@ -1,0 +1,222 @@
+@font-face {
+  font-family: bebaN;
+  src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+/* Fondo con gradiente de negro a morado */
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.938),
+    rgba(255, 103, 1, 0.832)
+  );
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Botón de cerrar sesión */
+.btn-cerrar-sesion {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #b52a00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cerrar-sesion:hover {
+  background-color: rgba(255, 60, 0, 0.978);
+}
+
+.btn-cerrar-sesion:focus {
+  background-color: rgba(255, 60, 0, 0.978);
+  color: white;
+  border: 2px solid rgb(255, 191, 0);
+  box-shadow: 0 0 5px rgba(255, 199, 32, 0.867), 0 0 12px rgb(255, 42, 0);
+  outline: none;
+}
+
+/* Formulario principal */
+.divForm {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 60vw;
+  max-width: 500px;
+}
+
+/* Estilo del título */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-size: 3rem;
+  color: white;
+  font-family: "bebaN";
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid orangered;
+  box-shadow: 2px 2px 2px 1px orangered;
+  outline: none;
+}
+
+/* Botón de envío */
+input.submit {
+  background-color: #b52a00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+input.submit:hover {
+  background-color: rgba(255, 60, 0, 0.978);
+}
+
+input.submit:focus {
+  border: 2px solid rgb(255, 191, 0);
+  box-shadow: 0 0 5px rgba(255, 199, 32, 0.867), 0 0 12px rgb(255, 42, 0);
+  outline: none;
+}
+
+/* Enlace de registro */
+.divRegistrar {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 30vw;
+  max-width: 500px;
+  height: auto;
+  margin-top: 5vh;
+}
+
+.divRegistrar a {
+  color: #b52a00;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.divRegistrar a:hover {
+  color: rgba(255, 60, 0, 0.978);
+}
+
+.divSesion {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 30vw;
+  max-width: 500px;
+  height: auto;
+  margin-top: 5vh;
+}
+
+.divSesion a {
+  color: #b52a00;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.divSesion a:hover {
+  color: rgba(255, 60, 0, 0.978);
+}
+
+.divSesion a:focus {
+  text-decoration-line: underline;
+}
+
+/* Párrafo de registro */
+.pLogin,
+.pSesion {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 1366px), (max-height: 768px) {
+  .divForm {
+    width: 70vw;
+    padding: 30px 20px;
+  }
+
+  legend {
+    font-size: 2.5rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+  }
+
+  input.submit {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  .divForm {
+    width: 80vw;
+    padding: 20px 15px;
+  }
+
+  legend {
+    font-size: 2rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 8px;
+  }
+
+  input.submit {
+    padding: 8px 10px;
+  }
+}

@@ -1,0 +1,137 @@
+/* Estilos Generales */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, rgba(53, 1, 83, 0.911) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #444;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #00a9e2;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #006eff;
+}
+
+/* Formulario de búsqueda */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  padding: 8px;
+  font-size: 1em;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  padding: 8px 16px;
+  background-color: #008cba;
+  color: rgb(166, 32, 32);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #005f75;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px outset purple;
+
+  background-color: #ffffffd1;
+  box-shadow: 0 7px 14px rgba(155, 34, 255, 0.803);
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #fff5ff96;
+}
+
+/* Estilo para el enlace "Nuevo" */
+p a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #ca2fe6;
+  color: white;
+  border-radius: 4px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 7px 14px rgba(155, 34, 255, 0.803);
+
+}
+
+p a:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para mejorar la usabilidad en dispositivos móviles */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  form input[type="text"] {
+    width: 60%;
+  }
+
+  form input[type="submit"] {
+    padding: 8px 16px;
+  }
+
+  p a {
+    font-size: 1em;
+    width: 180px;
+  }
+}

@@ -1,0 +1,222 @@
+@font-face {
+    font-family: bebaN;
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+/* Fondo con gradiente de negro a morado */
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.938), rgba(255, 103, 1, 0.832));/*rgba(52, 89, 52, 0.845)*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el botón de cerrar sesión */
+.btn-cerrar-sesion {
+    position: absolute;
+    /* Posiciona el botón respecto al body */
+    top: 20px;
+    /* 20px desde la parte superior */
+    right: 20px;
+    /* 20px desde la parte derecha */
+    padding: 10px 20px;
+    background-color: #b52a00;
+    /* Fondo morado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: rgba(255, 60, 0, 0.978);
+    /* Color morado claro cuando pasa el mouse */
+}
+
+.btn-cerrar-sesion:focus{
+    background-color: rgba(255, 60, 0, 0.978);
+    color: white; /* Color blanco para el texto */
+    border: 2px solid rgb(255, 191, 0); /* Añadir borde azul */
+    box-shadow: 0 0 5px  rgba(255, 199, 32, 0.867), 0 0 12px rgb(255, 42, 0); /* Añadir sombra azul */
+    outline: none; /* Eliminar el contorno predeterminado */
+}
+
+
+/* Contenedor central con fondo semitransparente */
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semitransparente */
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Espaciado uniforme entre los elementos */
+    align-items: center;
+    /* Alineación horizontal centrada */
+    height: 50%;
+    /* Ajuste de la altura para que los elementos se distribuyan */
+    width: 40vw;
+    /* Usamos vw para el ancho basado en el ancho de la ventana */
+}
+
+/* Título centrado y en blanco */
+.divNom {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-bottom: 14px;
+    /* Eliminar margen */
+    justify-items: center;
+    padding: auto;
+    font-family: 'bebaN';
+    letter-spacing: 2px;
+    height: 22vh;
+
+
+}
+
+/* Estilo para los enlaces (botones) */
+.divenlaces a {
+    display: block;
+    /* Convertir en bloque para que se alineen como botones */
+    margin: 14px 0;
+    /* Margen entre los botones */
+    padding: 12px 25px;
+    /* Padding uniforme */
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #b52a00;
+    /* Fondo morado para los botones */
+    width: 100%;
+    /* Para que los botones ocupen todo el ancho */
+    max-width: 300px;
+    /* Limitar el tamaño máximo del botón */
+    transition: background-color 0.5s ease;
+    text-align: center;
+    /* Centrado del texto dentro del botón */
+}
+
+/* Efecto hover para los botones */
+.divenlaces a:hover {
+    background-color: rgba(255, 60, 0, 0.978);
+
+    /* Color diferente al pasar el mouse */
+}
+
+.divenlaces a:focus{
+    background-color: rgba(255, 60, 0, 0.978);
+    color: white; /* Color blanco para el texto */
+    border: 2px solid rgb(255, 191, 0); /* Añadir borde amarillo */
+    box-shadow: 0 0 5px  rgba(255, 199, 32, 0.867), 0 0 12px rgb(255, 42, 0); /* Añadir sombra azul */
+    outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Agregar un contorno visual cuando se navega con el teclado */
+.divenlaces a:focus-visible {
+    outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Estilos responsivos */
+@media (max-width: 1366px), (max-height: 768px) {
+
+    .container {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Fondo semitransparente */
+        border-radius: 10px;
+        padding: 40px 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Espaciado uniforme entre los elementos */
+        align-items: center;
+        /* Alineación horizontal centrada */
+        height: 40%;
+        /* Ajuste de la altura para que los elementos se distribuyan */
+        width: 45vw;
+        /* Usamos vw para el ancho basado en el ancho de la ventana */
+    }
+
+
+    .divNom {
+  
+        font-size: 2.5rem;
+        height: 18vh;
+        
+        padding-bottom: 14px;
+        padding-top: 0px;
+        margin-top: 0px;
+
+    }
+
+    .divenlaces a {
+        display: block;
+        /* Convertir en bloque para que se alineen como botones */
+        margin: 8px 0;
+        /* Margen entre los botones */
+        padding: 8px 15px;
+        /* Padding uniforme */
+        font-size: 0.9rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: #b52a00;
+        /* Fondo morado para los botones */
+        width: 100%;
+        /* Para que los botones ocupen todo el ancho */
+        max-width: 100px;
+        /* Limitar el tamaño máximo del botón */
+        transition: background-color 0.5s ease;
+        text-align: center;
+        height: auto;
+    
+    }
+}
+
+@media (max-width: 780px) {
+
+
+    .container {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Fondo semitransparente */
+        border-radius: 10px;
+        padding: 40px 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* Espaciado uniforme entre los elementos */
+        align-items: center;
+        /* Alineación horizontal centrada */
+        height: 40%;
+        /* Ajuste de la altura para que los elementos se distribuyan */
+        width: 40vw;
+        /* Usamos vw para el ancho basado en el ancho de la ventana */
+    }
+
+
+
+
+    .divNom {
+        font-size: 2rem;
+    }
+
+    .divenlaces a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
