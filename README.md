@@ -36,7 +36,8 @@ Para que el proyecto funcione correctamente, necesitarás:
 
 
 2. **Configurar la base de datos**:
-   ⚫Accede a PHPMyAdmin y crea una nueva base de datos, por ejemplo, gestion_peliculas_series.
+   
+⚫Accede a PHPMyAdmin y crea una nueva base de datos, por ejemplo, gestion_peliculas_series.
    
 ⚫ Importa el archivo .sql que contiene la estructura de las tablas en la base de datos.
 
